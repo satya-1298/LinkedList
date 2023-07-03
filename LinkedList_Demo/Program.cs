@@ -21,6 +21,7 @@ namespace LinkedList_Demo
                 Console.WriteLine("3-Linked List Node");
                 Console.WriteLine("4-List in Reverse order");
                 Console.WriteLine("5-Remove first Element");
+                Console.WriteLine("6-Remove last Element");
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -64,17 +65,19 @@ namespace LinkedList_Demo
                         linkedList_Node.Reverse_Order(33);
                         linkedList_Node.Reverse_Order(2);
                         linkedList_Node.Reverse_Order(76);
-                        Console.WriteLine("\n");
                         linkedList_Node.Display();
                         Console.WriteLine("\n");
                         break;
                     case 5:
-
                         linkedList_Node.Remove_First();
                         linkedList_Node.Display();
                         Console.WriteLine("\n");
                         break;
-
+                    case 6:
+                        linkedList_Node.Remove_Last();
+                        linkedList_Node.Display();
+                        Console.WriteLine("\n");
+                        break;
                     default: 
                         Console.WriteLine("Invalid option");
                         break;

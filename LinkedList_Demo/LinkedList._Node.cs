@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,6 +66,20 @@ namespace LinkedList_Demo
             }
             head= head.next;
             Console.WriteLine("First Element Deleted Successfully");
+        }
+        public void Remove_Last()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            Node temp= head;
+            while(temp.next.next != null)
+            { 
+                temp = temp.next;
+            }
+            temp.next= null;    
+
         }
         //public Node<T> head;
 
