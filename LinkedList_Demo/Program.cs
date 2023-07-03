@@ -9,15 +9,19 @@ namespace LinkedList_Demo
 {
     public  class Program
     {
+
         static void Main(string[] args)
         {
+
             while (true)
             {
                 Console.WriteLine("Choose the below options");
                 Console.WriteLine("1-Linked list demo");
                 Console.WriteLine("2-stack program");
                 Console.WriteLine("3-Linked List Node");
+                Console.WriteLine("4-List in Reverse order");
                 int option = Convert.ToInt32(Console.ReadLine());
+
                 switch (option)
                 {
                     case 1:
@@ -35,10 +39,12 @@ namespace LinkedList_Demo
                     case 3:
                         //linked list using user defined
                         LinkedList_Node linkedList_Node = new LinkedList_Node();
+
                         linkedList_Node.Add(4);
                         linkedList_Node.Add(55);
                         linkedList_Node.Add(23);
                         linkedList_Node.Display();
+                        
                        // LinkedList_Node<int> linkedList_Node_int = new LinkedList_Node<int>();
                         //linkedList_Node_int.Adds(4);
                         //linkedList_Node_int.Adds(55);
@@ -50,6 +56,15 @@ namespace LinkedList_Demo
                         //linkedList_Node_string.Adds("Adabala");
                         Console.WriteLine("\n");
                         break;
+                    case 4:
+                        LinkedList_Node linkedList_Nodes = new LinkedList_Node();
+                        linkedList_Nodes.Reverse_Order(33);
+                        linkedList_Nodes.Reverse_Order(2);
+                        linkedList_Nodes.Reverse_Order(76);
+
+                        linkedList_Nodes.Display();
+                        break;
+
                     default: 
                         Console.WriteLine("Invalid option");
                         break;
