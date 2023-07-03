@@ -12,7 +12,7 @@ namespace LinkedList_Demo
 
         static void Main(string[] args)
         {
-
+            LinkedList_Node linkedList_Node = new LinkedList_Node();
             while (true)
             {
                 Console.WriteLine("Choose the below options");
@@ -20,6 +20,7 @@ namespace LinkedList_Demo
                 Console.WriteLine("2-stack program");
                 Console.WriteLine("3-Linked List Node");
                 Console.WriteLine("4-List in Reverse order");
+                Console.WriteLine("5-Remove first Element");
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -38,10 +39,12 @@ namespace LinkedList_Demo
                         break;
                     case 3:
                         //linked list using user defined
-                        LinkedList_Node linkedList_Node = new LinkedList_Node();
+                        //LinkedList_Node linkedList_Node = new LinkedList_Node();
 
                         linkedList_Node.Add(4);
+                        linkedList_Node.Display();
                         linkedList_Node.Add(55);
+                        linkedList_Node.Display();
                         linkedList_Node.Add(23);
                         linkedList_Node.Display();
                         
@@ -57,12 +60,19 @@ namespace LinkedList_Demo
                         Console.WriteLine("\n");
                         break;
                     case 4:
-                        LinkedList_Node linkedList_Nodes = new LinkedList_Node();
-                        linkedList_Nodes.Reverse_Order(33);
-                        linkedList_Nodes.Reverse_Order(2);
-                        linkedList_Nodes.Reverse_Order(76);
+                       // LinkedList_Node linkedList_Nodes = new LinkedList_Node();
+                        linkedList_Node.Reverse_Order(33);
+                        linkedList_Node.Reverse_Order(2);
+                        linkedList_Node.Reverse_Order(76);
+                        Console.WriteLine("\n");
+                        linkedList_Node.Display();
+                        Console.WriteLine("\n");
+                        break;
+                    case 5:
 
-                        linkedList_Nodes.Display();
+                        linkedList_Node.Remove_First();
+                        linkedList_Node.Display();
+                        Console.WriteLine("\n");
                         break;
 
                     default: 
