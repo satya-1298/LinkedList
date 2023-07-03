@@ -38,6 +38,7 @@ namespace LinkedList_Demo
                         linkedList_Node.Add(4);
                         linkedList_Node.Add(55);
                         linkedList_Node.Add(23);
+                        linkedList_Node.Display();
                        // LinkedList_Node<int> linkedList_Node_int = new LinkedList_Node<int>();
                         //linkedList_Node_int.Adds(4);
                         //linkedList_Node_int.Adds(55);

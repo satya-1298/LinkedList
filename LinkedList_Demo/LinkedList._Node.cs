@@ -28,6 +28,20 @@ namespace LinkedList_Demo
             }
             Console.WriteLine("{0} inserted in to Linked list ", data);
         }
+        public void Display()
+        {
+            Node temp = head;
+            if(temp==null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            while(temp!=null) 
+            {
+                Console.WriteLine(temp.data);
+                 temp = temp.next;
+                
+            }
+        }
         //public Node<T> head;
 
         //public void Adds(T data)
