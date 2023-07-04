@@ -73,12 +73,21 @@ namespace LinkedList_Demo
             {
                 Console.WriteLine("List is Empty");
             }
-            Node temp= head;
-            while(temp.next.next != null)
-            { 
-                temp = temp.next;
+            if (head.next == null)
+            {
+                Console.WriteLine("The next element of head is null");
             }
-            temp.next= null;    
+            else
+            {
+
+                Node temp = head;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                Console.WriteLine("Removed last element");
+            }
 
         }
         //public Node<T> head;

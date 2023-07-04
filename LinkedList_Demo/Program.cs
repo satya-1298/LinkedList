@@ -43,10 +43,12 @@ namespace LinkedList_Demo
                         //LinkedList_Node linkedList_Node = new LinkedList_Node();
 
                         linkedList_Node.Add(4);
-                        linkedList_Node.Display();
+                       // linkedList_Node.Display();
                         linkedList_Node.Add(55);
-                        linkedList_Node.Display();
-                        linkedList_Node.Add(23);
+                       // linkedList_Node.Add(2);
+                       // linkedList_Node.Add(8);
+                       //// linkedList_Node.Display();
+                       // linkedList_Node.Add(23);
                         linkedList_Node.Display();
                         
                        // LinkedList_Node<int> linkedList_Node_int = new LinkedList_Node<int>();
