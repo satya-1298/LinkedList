@@ -90,6 +90,22 @@ namespace LinkedList_Demo
             }
 
         }
+        public void Size_Of_List()
+        {
+            int count = 1;
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            Node temp = head;
+            while(temp.next != null) 
+            {
+                count++;
+                temp = temp.next;   
+            }
+            Console.WriteLine("Size of Linked list is " + count);
+
+        }
         //public Node<T> head;
 
         //public void Adds(T data)
