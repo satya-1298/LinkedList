@@ -106,6 +106,27 @@ namespace LinkedList_Demo
             Console.WriteLine("Size of Linked list is " + count);
 
         }
+        public int Search(int value)
+        {
+            Node node = head;
+            if(node==null)
+            {
+                return -1;
+            }
+            int count = 0;
+            while (node != null) 
+            {
+                if (node.data == value)
+                {
+                    Console.WriteLine();
+                    return count;
+                }
+                node= node.next;    
+                count++;
+            }
+            return count; 
+
+        }
         //public Node<T> head;
 
         //public void Adds(T data)

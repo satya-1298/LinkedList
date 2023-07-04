@@ -23,6 +23,7 @@ namespace LinkedList_Demo
                 Console.WriteLine("5-Remove first Element");
                 Console.WriteLine("6-Remove last Element");
                 Console.WriteLine("7-Size of Linked list");
+                Console.WriteLine("8-Searching Elements");
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -84,6 +85,12 @@ namespace LinkedList_Demo
                     case 7:
                         linkedList_Node.Size_Of_List();
                         linkedList_Node.Display();
+                        Console.WriteLine("\n");
+                        break;
+                    case 8:
+                        int val= linkedList_Node.Search(55);
+                        Console.WriteLine("Element present in position - "+val);
+                       // linkedList_Node.Display();
                         Console.WriteLine("\n");
                         break;
                     default: 
