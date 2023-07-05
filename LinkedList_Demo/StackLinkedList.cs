@@ -46,5 +46,18 @@ namespace LinkedList_Demo
             }
             Console.WriteLine(top.data);
         }
+        //Will return top value and also remove it
+        public void Pop() 
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine(top.data);
+            top = top.next;
+
+
+        }
     }
 }

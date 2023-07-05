@@ -101,7 +101,13 @@ namespace LinkedList_Demo
                         stackLinkedList.Push(2);
                         stackLinkedList.Push(8);
                         stackLinkedList.Display();
+                        Console.WriteLine("###############");
                         stackLinkedList.Peek();
+                        Console.WriteLine("###############3");
+                        stackLinkedList.Pop();
+                        Console.WriteLine("###############3");
+                        stackLinkedList.Display();
+
                         break;
                     default: 
                         Console.WriteLine("Invalid option");
