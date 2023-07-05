@@ -108,6 +108,7 @@ namespace LinkedList_Demo
         }
         public int Search(int value)
         {
+            int found=0;
             Node node = head;
             if(node==null)
             {
@@ -116,15 +117,27 @@ namespace LinkedList_Demo
             int count = 0;
             while (node != null) 
             {
+                count++;
                 if (node.data == value)
                 {
-                    Console.WriteLine();
-                    return count;
+                    found++;
+                   // return count;
                 }
-                node= node.next;    
-                count++;
+
+                node = node.next;    
+                //count++;
+
+                
             }
-            return count; 
+            if(found==1)
+            {
+                Console.WriteLine("The element in the position - " + count);
+            }
+            else
+            {
+                Console.WriteLine("Element not found in list");
+            }
+            return count;
 
         }
         //public Node<T> head;
