@@ -36,5 +36,15 @@ namespace LinkedList_Demo
                 temp = temp.next;
             }
         }
+        //Will return top value but not delete it
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine(top.data);
+        }
     }
 }
