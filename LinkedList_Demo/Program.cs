@@ -25,20 +25,21 @@ namespace LinkedList_Demo
                 Console.WriteLine("7-Size of Linked list");
                 Console.WriteLine("8-Searching Elements");
                 Console.WriteLine("9-Insert elements in stack");
+                Console.WriteLine("10-Inserting elements in Queue");
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
                 {
                     case 1:
                         //linked list using in-build methods
-                         Linked linked = new Linked();
-                          linked.Demo();
-                          Console.WriteLine("\n");
+                        Linked linked = new Linked();
+                        linked.Demo();
+                        Console.WriteLine("\n");
                         break;
                     case 2:
                         //stack 
-                         Stack_Demo stack = new Stack_Demo();
-                         stack.Element();
+                        Stack_Demo stack = new Stack_Demo();
+                        stack.Element();
                         Console.WriteLine("\n");
                         break;
                     case 3:
@@ -46,15 +47,15 @@ namespace LinkedList_Demo
                         //LinkedList_Node linkedList_Node = new LinkedList_Node();
 
                         linkedList_Node.Add(4);
-                       // linkedList_Node.Display();
+                        // linkedList_Node.Display();
                         linkedList_Node.Add(55);
-                       // linkedList_Node.Add(2);
-                       // linkedList_Node.Add(8);
-                       //// linkedList_Node.Display();
-                       // linkedList_Node.Add(23);
+                        // linkedList_Node.Add(2);
+                        // linkedList_Node.Add(8);
+                        //// linkedList_Node.Display();
+                        // linkedList_Node.Add(23);
                         linkedList_Node.Display();
-                        
-                       // LinkedList_Node<int> linkedList_Node_int = new LinkedList_Node<int>();
+
+                        // LinkedList_Node<int> linkedList_Node_int = new LinkedList_Node<int>();
                         //linkedList_Node_int.Adds(4);
                         //linkedList_Node_int.Adds(55);
                         //linkedList_Node_int.Adds(23);
@@ -66,7 +67,7 @@ namespace LinkedList_Demo
                         Console.WriteLine("\n");
                         break;
                     case 4:
-                       // LinkedList_Node linkedList_Nodes = new LinkedList_Node();
+                        // LinkedList_Node linkedList_Nodes = new LinkedList_Node();
                         linkedList_Node.Reverse_Order(33);
                         linkedList_Node.Reverse_Order(2);
                         linkedList_Node.Reverse_Order(76);
@@ -91,8 +92,8 @@ namespace LinkedList_Demo
                     case 8:
                         linkedList_Node.Search(55);
                         //Console.WriteLine("Element present in position - "+val);
-                       // linkedList_Node.Display();
-                       Console.ReadLine();
+                        // linkedList_Node.Display();
+                        Console.ReadLine();
                         Console.WriteLine("\n");
                         break;
                     case 9:
@@ -103,11 +104,20 @@ namespace LinkedList_Demo
                         stackLinkedList.Display();
                         Console.WriteLine("###############");
                         stackLinkedList.Peek();
-                        Console.WriteLine("###############3");
+                        Console.WriteLine("###############");
                         stackLinkedList.Pop();
-                        Console.WriteLine("###############3");
+                        Console.WriteLine("###############");
                         stackLinkedList.Display();
-
+                        Console.WriteLine("\n");
+                        break;
+                    case 10:
+                        Queue_LinkedList queue_LinkedList = new Queue_LinkedList();
+                        queue_LinkedList.Enqueue(10);
+                        queue_LinkedList.Enqueue(20);
+                        queue_LinkedList.Enqueue(30);
+                        Console.WriteLine("**********");
+                        queue_LinkedList.Dequeue();
+                        queue_LinkedList.Display();
                         break;
                     default: 
                         Console.WriteLine("Invalid option");

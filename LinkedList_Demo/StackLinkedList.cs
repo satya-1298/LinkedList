@@ -56,8 +56,6 @@ namespace LinkedList_Demo
             }
             Console.WriteLine(top.data);
             top = top.next;
-
-
         }
     }
 }
